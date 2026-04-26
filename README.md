@@ -169,13 +169,13 @@ Frontend will be available at `http://localhost:5173`
 
 ## Admin Panel
 
-SwiftWallet uses **Filament v4** as the internal admin panel, accessible via the `api-gateway` service.
+SwiftWallet uses **Filament v5** as the internal admin panel, accessible via the `api-gateway` service.
 
 ```
 http://api-gateway.test/admin
 ```
 
-Filament v4 highlights used in this project:
+Filament v5 highlights used in this project:
 - **Performance** — table rendering is 2-3x faster compared to v3
 - **Tailwind CSS v4** — reworked configuration with faster builds
 - **Built-in MFA** — multi-factor authentication out of the box
