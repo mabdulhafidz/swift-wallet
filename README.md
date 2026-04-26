@@ -241,7 +241,7 @@ php artisan queue:work redis
 - [ ] Transaction service — transfer & history
 - [ ] Notification service — Redis queue consumer
 - [ ] GraphQL subscriptions — real-time notifications
-- [ ] Filament v4 admin panel
+- [ ] Filament v5 admin panel
 - [ ] Docker setup
 
 ---
