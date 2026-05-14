@@ -42,19 +42,19 @@ declare module '$env/static/private' {
 	export const APPDATA: string;
 	export const CHROME_CRASHPAD_PIPE_NAME: string;
 	export const CLAUDE_CODE_SSE_PORT: string;
+	export const COLOR: string;
 	export const COLORTERM: string;
 	export const CommonProgramFiles: string;
 	export const CommonProgramW6432: string;
 	export const COMPUTERNAME: string;
 	export const ComSpec: string;
 	export const DriverData: string;
-	export const EFC_6632_1262719628: string;
-	export const EFC_6632_1592913036: string;
-	export const EFC_6632_2283032206: string;
-	export const EFC_6632_2775293581: string;
-	export const EFC_6632_3789132940: string;
-	export const FPS_BROWSER_APP_PROFILE_STRING: string;
-	export const FPS_BROWSER_USER_PROFILE_STRING: string;
+	export const EDITOR: string;
+	export const EFC_6456_1262719628: string;
+	export const EFC_6456_1592913036: string;
+	export const EFC_6456_2283032206: string;
+	export const EFC_6456_2775293581: string;
+	export const EFC_6456_3789132940: string;
 	export const GIT_ASKPASS: string;
 	export const HOME: string;
 	export const HOMEDRIVE: string;
@@ -68,15 +68,18 @@ declare module '$env/static/private' {
 	export const NODE_ENV: string;
 	export const NODE_PATH: string;
 	export const npm_command: string;
+	export const npm_config_cache: string;
 	export const npm_config_engine_strict: string;
-	export const npm_config_frozen_lockfile: string;
 	export const npm_config_globalconfig: string;
+	export const npm_config_global_prefix: string;
+	export const npm_config_init_module: string;
+	export const npm_config_local_prefix: string;
 	export const npm_config_node_gyp: string;
-	export const npm_config_npm_globalconfig: string;
-	export const npm_config_registry: string;
+	export const npm_config_noproxy: string;
+	export const npm_config_npm_version: string;
+	export const npm_config_prefix: string;
+	export const npm_config_userconfig: string;
 	export const npm_config_user_agent: string;
-	export const npm_config_verify_deps_before_run: string;
-	export const npm_config__jsr_registry: string;
 	export const npm_execpath: string;
 	export const npm_lifecycle_event: string;
 	export const npm_lifecycle_script: string;
@@ -91,8 +94,6 @@ declare module '$env/static/private' {
 	export const OS: string;
 	export const Path: string;
 	export const PATHEXT: string;
-	export const pnpm_config_verify_deps_before_run: string;
-	export const PNPM_SCRIPT_SRC_DIR: string;
 	export const PROCESSOR_ARCHITECTURE: string;
 	export const PROCESSOR_IDENTIFIER: string;
 	export const PROCESSOR_LEVEL: string;
@@ -157,7 +158,7 @@ declare module '$env/static/private' {
  * The above values will be the same _even if_ different values for `ENVIRONMENT` or `PUBLIC_BASE_URL` are set at runtime, as they are statically replaced in your code with their build time values.
  */
 declare module '$env/static/public' {
-	
+	export const PUBLIC_API_URL: string;
 }
 
 /**
@@ -211,19 +212,19 @@ declare module '$env/dynamic/private' {
 		APPDATA: string;
 		CHROME_CRASHPAD_PIPE_NAME: string;
 		CLAUDE_CODE_SSE_PORT: string;
+		COLOR: string;
 		COLORTERM: string;
 		CommonProgramFiles: string;
 		CommonProgramW6432: string;
 		COMPUTERNAME: string;
 		ComSpec: string;
 		DriverData: string;
-		EFC_6632_1262719628: string;
-		EFC_6632_1592913036: string;
-		EFC_6632_2283032206: string;
-		EFC_6632_2775293581: string;
-		EFC_6632_3789132940: string;
-		FPS_BROWSER_APP_PROFILE_STRING: string;
-		FPS_BROWSER_USER_PROFILE_STRING: string;
+		EDITOR: string;
+		EFC_6456_1262719628: string;
+		EFC_6456_1592913036: string;
+		EFC_6456_2283032206: string;
+		EFC_6456_2775293581: string;
+		EFC_6456_3789132940: string;
 		GIT_ASKPASS: string;
 		HOME: string;
 		HOMEDRIVE: string;
@@ -237,15 +238,18 @@ declare module '$env/dynamic/private' {
 		NODE_ENV: string;
 		NODE_PATH: string;
 		npm_command: string;
+		npm_config_cache: string;
 		npm_config_engine_strict: string;
-		npm_config_frozen_lockfile: string;
 		npm_config_globalconfig: string;
+		npm_config_global_prefix: string;
+		npm_config_init_module: string;
+		npm_config_local_prefix: string;
 		npm_config_node_gyp: string;
-		npm_config_npm_globalconfig: string;
-		npm_config_registry: string;
+		npm_config_noproxy: string;
+		npm_config_npm_version: string;
+		npm_config_prefix: string;
+		npm_config_userconfig: string;
 		npm_config_user_agent: string;
-		npm_config_verify_deps_before_run: string;
-		npm_config__jsr_registry: string;
 		npm_execpath: string;
 		npm_lifecycle_event: string;
 		npm_lifecycle_script: string;
@@ -260,8 +264,6 @@ declare module '$env/dynamic/private' {
 		OS: string;
 		Path: string;
 		PATHEXT: string;
-		pnpm_config_verify_deps_before_run: string;
-		PNPM_SCRIPT_SRC_DIR: string;
 		PROCESSOR_ARCHITECTURE: string;
 		PROCESSOR_IDENTIFIER: string;
 		PROCESSOR_LEVEL: string;
@@ -345,6 +347,7 @@ declare module '$env/dynamic/private' {
  */
 declare module '$env/dynamic/public' {
 	export const env: {
+		PUBLIC_API_URL: string;
 		[key: `PUBLIC_${string}`]: string | undefined;
 	}
 }
